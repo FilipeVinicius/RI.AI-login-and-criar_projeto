@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CriarProjeto_style.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <title>RI.AI Criar projeto</title>
+   
+</head>
+
+
+<body>
+    <div class="caixa">
+    <h2>Criação de Projeto</h2><br>
+    <hr><br>
+    <form action="acao.php">
+        <label for="nomeCom"><b>Nome do criador </b> <input type="text" name="txtnome" id="txtnome" placeholder="Digite seu nome" required></label><br><br>
+        <label for="nomePro"><b>Nome do projeto</b> <input type="text" name="txtnomePro" id="txtnomePro" placeholder="Digite o nome do projeto"></label><br><br>
+        <label for="nickUsu"><b>Nick do(a) usuário(a)</b> <input type="text" name="txtnick" id="txtnick" placeholder="Digite seu nick" required></label><br><br>
+        <label for="desc"><p><b>Descrição </b></p> <textarea name="txtdesc" id="txtdesc" cols="30" rows="10" style="resize: none;" placeholder="Descreva o seu projeto"></textarea></label><br><br>
+        <label for="quantMembros">
+            <b>Quantidade de membros&nbsp;&nbsp;</b><select name="quantMembros" id="quantMembros" required>
+                <option value="" data-default disabled selected></option>
+                <option value="nDois">2</option>
+                <option value="nTres">3</option>
+                <option value="nQuatro">4</option>
+                <option value="nCinco">5</option>
+                <option value="nSeis">6</option>
+                <option value="nSete">7</option>
+                <option value="nOito">8</option>
+                <option value="nNove">9</option>
+                <option value="nDez">10</option>
+                <option value="nOnze">11</option>
+                <option value="nDoze">12</option>
+            </select>
+        </label><br><br>
+        <label for="dataIni"><b>Data de início </b> <input type="date" name="dataIni" id="dataIni" value = "return dataA"></label><br><br>
+        <label for="dataCon"><b>Data de conclusão </b> <input type="date" name="dataIni" id="dataIni"></label>
+        <br><br><br><br>
+        <input type="submit" value="Enviar">
+
+</div>
+</form>
+</body>
+</html>

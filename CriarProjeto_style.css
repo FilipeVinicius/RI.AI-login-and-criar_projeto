@@ -1,0 +1,108 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+hr{border-color: black;}
+
+:root{
+    --bg-color-caixa: #8debeb;
+    --bg-color-body: #2f1e65;
+    --bg-color-submit: #0310c0;
+    --bg-color-submit-hover: #1423ff;
+    --bg-color-submit-active: #0c0a7e;
+    --txt-color: #fff;
+    --border-color: #000;
+    --border-focus: #7652da;
+}
+
+body{
+    background-color: var(--bg-color-body);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+h2{
+    text-align: center;
+}
+
+.caixa{
+    background-color: var(--bg-color-caixa);
+    margin: 5vh;
+    border: 3px solid;
+    padding: 30px;
+    text-align: left;
+    position: relative;
+    width: 60vh;
+    height: 100%;
+    border-radius: 20px;
+    
+
+}
+
+b{  
+    font-size: 15px;
+}
+
+input[type="text"], input[type="password"]{
+    width: 100%;
+    height: 25px;
+    border-radius: 10px;
+    text-indent: 8px;
+    border: 2px solid var(--border-color);
+    display: block;
+    
+}
+
+input[type="date"]{
+    border: 2px solid var(--border-color);
+    cursor: pointer;
+
+}
+
+textarea{
+    width: 100%;
+    border-radius: 10px;
+    text-indent: 8px;
+    border: 2px solid var(--border-color);
+}
+
+::placeholder{
+    text-indent: 6px;
+    color: rgb(146, 146, 146);
+}
+
+#quantMembros{
+    width: 11%;
+    border: 2px solid var(--border-color);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="submit"]{
+    padding: 11px 14vh;
+    border-radius: 7px;
+    cursor: pointer;
+    display: flex;
+    margin: 0 auto;
+    background-color: var(--bg-color-submit);
+    color: var(--txt-color);
+}
+
+input[type="text"]:focus,input[type="date"]:focus, textarea:focus, #quantMembros:focus{
+    outline: none;
+    border: 2px solid var(--border-focus);
+    transition: 0.3s;
+}
+
+input[type="submit"]:hover{
+    background-color: var(--bg-color-submit-hover);
+    transition: 0.5s;
+}
+
+input[type="submit"]:active{
+    background-color: var(--bg-color-submit-active);
+}
