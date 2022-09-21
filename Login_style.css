@@ -5,13 +5,14 @@
 }
 
 :root{
-    --bg-color-caixa: #8debeb;
+    --bg-color-caixa: #E9E9E9;
     --bg-color-body: #2f1e65;
     --bg-color-submit: #8b6af7;
     --bg-color-submit-hover: #7652da;
     --bg-color-submit-active: #453180;
     --txt-color: #fff;
     --txt-color-a: #6c4dcf;
+    --bg-color-input: #CBCBCB;
 }
 
 body{
@@ -31,13 +32,13 @@ h2{
     
     background-color: var(--bg-color-caixa);
     margin: 20vh;
-    border: 2px solid;
+    border: 3px solid;
     border-radius: 25px;
     padding: 37px;
     text-align: center;
     position: relative;
     width: 50vh;
-    height: 42vh;
+    height: 33vh;
 }
 
 input[type="email"]{
@@ -54,7 +55,7 @@ input[type="email"], input[type="senha"]{
     border-radius: 6px;
     text-indent: 2px;
     text-align: left;
-    
+    background-color: var(--bg-color-input);
 }
 
 input[type="submit"]{
@@ -87,16 +88,17 @@ input[type="email"]:focus, input[type="senha"]:focus {
     transition: 0.2s;
 }
 
-
 input[type="submit"]:hover{
     background-color: var(--bg-color-submit-hover);
     transition: 0.5s;
 }
-
 
 input[type="submit"]:active{
     background-color: var(--bg-color-submit-active);
     transition: 0.4s;
 }
 
-
+::placeholder{
+    color: gray;
+    font-size: small;
+}
