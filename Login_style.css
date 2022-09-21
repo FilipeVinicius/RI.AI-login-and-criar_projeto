@@ -38,7 +38,7 @@ h2{
     text-align: center;
     position: relative;
     width: 50vh;
-    height: 33vh;
+    height: 100%;
 }
 
 input[type="email"]{
