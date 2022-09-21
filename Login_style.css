@@ -29,7 +29,6 @@ h2{
 }
 
 #caixa{
-    
     background-color: var(--bg-color-caixa);
     margin: 20vh;
     border: 3px solid;
@@ -48,7 +47,7 @@ input[type="email"]{
 
 input[type="senha"]{margin-left: 2px;}
 
-input[type="email"], input[type="senha"]{
+input[type="email"], input[type="password"]{
     width: 80%;
     height: 4vh;
     border: solid 2px;
@@ -64,7 +63,7 @@ input[type="submit"]{
     color: var(--txt-color);
     background-color: var(--bg-color-submit);
     cursor: pointer;
-    position: relative;
+    
 }
 
 a{
@@ -82,7 +81,7 @@ a:hover{
     color: rgb(187, 187, 187);
 }
 
-input[type="email"]:focus, input[type="senha"]:focus {
+input[type="email"]:focus, input[type="password"]:focus {
     border: 2px solid var(--bg-color-submit);
     outline: none;
     transition: 0.2s;
