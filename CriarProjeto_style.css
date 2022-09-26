@@ -1,17 +1,17 @@
 *{
     padding: 0;
     margin: 0;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Inter', sans-serif;
 }
 
 hr{border-color: black;}
 
 :root{
-    --bg-color-caixa: #8debeb;
+    --bg-color-caixa: #e9e9e9;
     --bg-color-body: #2f1e65;
-    --bg-color-submit: #0310c0;
-    --bg-color-submit-hover: #1423ff;
-    --bg-color-submit-active: #0c0a7e;
+    --bg-color-submit: #7652da;
+    --bg-color-submit-hover: #732fc2;
+    --bg-color-submit-active: #56168a;
     --txt-color: #fff;
     --border-color: #000;
     --border-focus: #7652da;
@@ -39,18 +39,16 @@ h2{
     width: 60vh;
     height: 100%;
     border-radius: 20px;
-    
-
 }
 
 b{  
     font-size: 15px;
 }
 
-input[type="text"], input[type="password"]{
+input[type="text"]{
     width: 100%;
-    height: 25px;
-    border-radius: 10px;
+    height: 1.6rem;
+    border-radius: 5px;
     text-indent: 8px;
     border: 2px solid var(--border-color);
     display: block;
@@ -60,12 +58,12 @@ input[type="text"], input[type="password"]{
 input[type="date"]{
     border: 2px solid var(--border-color);
     cursor: pointer;
-
+    display: inline-block;
 }
 
 textarea{
     width: 100%;
-    border-radius: 10px;
+    border-radius: 5px;
     text-indent: 8px;
     border: 2px solid var(--border-color);
 }
@@ -83,12 +81,14 @@ textarea{
 }
 
 input[type="submit"]{
-    padding: 11px 14vh;
+    height: auto;
+    padding: 14px;
+    width: 100%;
+    text-align: center;
     border-radius: 7px;
     cursor: pointer;
-    display: flex;
     margin: 0 auto;
-    background-color: var(--bg-color-submit);
+    background-color: #7652da;
     color: var(--txt-color);
 }
 
