@@ -58,12 +58,13 @@ input[type="email"], input[type="password"]{
 }
 
 input[type="submit"]{
-    padding: 12px 20vh;
+    padding: 12px;
     border-radius: 7px;
     color: var(--txt-color);
     background-color: var(--bg-color-submit);
     cursor: pointer;
-    
+    width: 100%;
+    text-align: center;
 }
 
 a{
